@@ -20,7 +20,7 @@ export class PersonProfile extends AutomapperProfile {
               resolve('async last name');
             }, 100);
           });
-          source.lastName = resolveValue;
+          destination.lastName = resolveValue;
         });
     };
   }
