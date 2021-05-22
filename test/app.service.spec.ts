@@ -21,6 +21,8 @@ describe('Automapper test', () => {
 
     const asyncPersonDto: AsyncPersonDTO = await appService.personMapperAsync();
 
+    expect(asyncPersonDto.name).toBe('sync name');
     expect(asyncPersonDto.lastName).toBe('async last name');
+    done();
   });
 });
