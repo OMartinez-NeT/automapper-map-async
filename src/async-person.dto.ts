@@ -1,6 +1,6 @@
 import { AutoMap } from '@automapper/classes';
 
-export class asyncPersonDTO {
+export class AsyncPersonDTO {
   @AutoMap()
   name: string;
 
