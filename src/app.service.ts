@@ -12,6 +12,6 @@ export class AppService {
     const syncPerson = new PersonDTO();
     syncPerson.name = 'sync name';
 
-    return this.mapper.map(syncPerson, AsyncPersonDTO, PersonDTO);
+    return this.mapper.mapAsync(syncPerson, AsyncPersonDTO, PersonDTO);
   };
 }
